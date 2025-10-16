@@ -1,0 +1,68 @@
+body{
+   background-image: url('imagenes/desktop-wallpaper-black-and-yellow-my-blog-for-pinterest.jpg');
+ background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* cambia a flex-start o flex-end */
+  list-style: none;
+  padding: 0;
+
+}
+nav {
+  position: relative;
+  margin-left: 650px;
+  color:rgb(235, 231, 228);
+
+  /* 🎨 Glassmorphism SOLO en el menú */
+  background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.imagen{
+    margin-left:  100px ;
+   margin-top: 34px;
+    
+}
+
+h3{
+color: aliceblue;
+    text-align: center;
+    margin: left 15px;px;
+    margin-top: 40px;
+}
+
+p{
+    color: aliceblue;
+    margin-left:20px;
+    text-align: center;
+}
+
+img{
+      /* 🎨 Glassmorphism SOLO en el menú */
+  background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block; 
+  position: relative;
+  margin-left: 450px;
+  margin-top: 25px;
+    border-radius: 10000000px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BellaNails - Embelleciendo tus manos</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: #fffafc;">
+
+  <!-- HEADER -->
+  <header class="text-center p-4" style="background: linear-gradient(135deg, #f6d1e7, #e8c6f8); color: #4a235a;">
+    <h1 style="font-family: 'Brush Script MT', cursive;">💖 Bienvenida a BellaNails 💖</h1>
+    <nav class="mt-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark">Inicio</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link text-dark">Blog</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link text-dark">Contacto</a></li>
+        <li class="nav-item"><a href="mibiografia.html" class="nav-link text-dark">Sobre mí</a></li>
+        <li class="nav-item"><a href="minegocio.html" class="nav-link text-dark">Mi negocio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container my-5">
+
+    <!-- Misión y Visión -->
+    <div class="row text-center mb-5">
+      <div class="col-md-6 p-4" style="background-color: #fce4ec; border-radius: 15px;">
+        <h4 style="color:#ad1457;">🌸 Misión</h4>
+        <p>Embellecer las manos de nuestras clientas ofreciendo uñas acrílicas personalizadas, elegantes y duraderas.</p>
+      </div>
+      <div class="col-md-6 p-4 text-white" style="background-color: #ba68c8; border-radius: 15px;">
+        <h4>✨ Visión</h4>
+        <p>Convertirnos en el salón de uñas líder en la ciudad, reconocido por la creatividad y calidad de nuestros diseños en 5 años.</p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <h3 class="text-center mb-4">Nuestros Diseños 💅</h3>
+    <div id="demo" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 shadow-lg">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200" class="d-block w-100" alt="Uñas acrílicas elegantes">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1621605815971-47ba9ebfdc8d?w=1200" class="d-block w-100" alt="Diseños de uñas con glitter">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1601622153059-2d21f7a6d2f6?w=1200" class="d-block w-100" alt="Manicura profesional">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1630548984757-94d55bdacac1?w=1200" class="d-block w-100" alt="Uñas decoradas creativas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Botón Toast y Tooltip -->
+    <div class="text-center">
+      <button id="toastBtn" class="btn btn-pink mt-3" style="background-color:#f48fb1; color:white;">💅 Mostrar Promo</button>
+      <button class="btn btn-lilac mt-3" style="background-color:#ce93d8; color:white;" data-bs-toggle="tooltip" title="Más información sobre nuestros servicios">✨ Tooltip</button>
+    </div>
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast">
+        <div class="toast-body">¡Es hora de embellecer tus uñas con estilo! 💖</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center p-4" style="background: linear-gradient(135deg, #f8c6d4, #f6e1f6);">
+    <h4 style="font-family: 'Brush Script MT', cursive; color: #6a1b9a;">💖 BellaNails 💖</h4>
+    <p style="color: #4a235a;">Embelleciendo tus manos con elegancia y creatividad ✨</p>
+    <div class="mt-3">
+      <a href="index.html" class="btn btn-light rounded-pill px-4 m-1">Inicio</a>
+      <a href="contacto.html" class="btn btn-outline-dark rounded-pill px-4 m-1">Contacto</a>
+      <a href="blog.html" class="btn btn-outline-dark rounded-pill px-4 m-1">Blog</a>
+    </div>
+    <p class="mt-3" style="font-size: 0.9em; color: #7b1fa2;">© 2025 BellaNails - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tooltip
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+
+    // Toast
+    const toast = new bootstrap.Toast(document.getElementById('liveToast'));
+    document.getElementById('toastBtn').onclick = () => toast.show();
+  </script>
+
+</body>
+</html>
+

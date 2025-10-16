@@ -1,0 +1,42 @@
+body{
+    background-image: url('imagenes/desktop-wallpaper-black-and-yellow-my-blog-for-pinterest.jpg');
+ background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+    
+}
+ 
+.url{
+   margin-left: 250px;
+   margin-top: 50px;
+}
+
+h1{
+     /* 🎨 Glassmorphism SOLO en el menú */
+  background:rgba(9, 9, 9, 0.784); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block; 
+border-radius:45px ;
+    color: cyan;
+   position: relative;
+   margin-left: 245px
+}
+h2{
+    color:cyan;
+    text-shadow:black;
+}
+.contacto{
+    color:cyan;
+        margin-left: 120px;
+    margin-top: 10px;
+}
+.piedepagina{
+    margin-left: 120px;
+    margin-top: 40px;
+    color: cyan;
+}

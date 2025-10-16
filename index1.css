@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 10vh;
+
+  background: url("imagenes/Vrz05y.gif") repeat-x; /* Se repite horizontal */
+  background-size:cover; /* Mantiene proporción de la imagen */
+  animation: moverFondo 30s linear infinite;
+}
+
+@keyframes moverFondo {
+  0%   { background-position: 0 0; }
+  100% { background-position:-0px 0 } /* Mueve la imagen hacia la izquierda */
+}
+
+nav {
+  position: relative;
+  margin-left: 56px;
+  color:rgb(129, 80, 45);
+
+  /* 🎨 Glassmorphism SOLO en el menú */
+  background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block;
+}
+
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:rgb(129, 80, 45);
+
+}
+.h11{
+    text-align: center;
+    color:rgb(129, 80, 45);
+}
+p{
+    text-align: center;
+    font-size:20px ;
+    color:rgb(129, 80, 45);
+}
+
+h3{
+    /* 🎨 Glassmorphism SOLO en el menú */
+  background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block;
+    color:rgb(129, 80, 45);
+    margin-left: 150px;
+}
+
+li{
+   
+    color:rgb(129, 80, 45);
+    margin-left: 150px;
+    
+}
+
+.url{
+  text-align: center;
+  color:rgb(129, 80, 45)
+}
+
+.Frase{
+  margin-left: 34px;
+}
+
+.piedepagina{
+  margin-top:250px ;
+}
+img{
+/* 🎨 Glassmorphism SOLO en el menú */
+  background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(10px);          /* desenfoque detrás */
+  border-radius: 20px;                  /* bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: inline-block; 
+border-radius:45px ;
+}
+.imagen1{
+position: relative;
+    margin-left:  100px ;
+   margin-top: 34px;
+
+}
+.imagen2{
+position: relative;
+margin-left: 15px;
+margin-top: 34px;
+
+}
+
